@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.ico" />
+    <title>Login - Admina</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/summernote.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <div class="af-page">
+      <div class="af-content">
+        <div class="logo-cont">
+          <img src="img/logo-light.svg" />
+        </div>
+        <div class="content-head">
+          <h1>Welcome Admin!</h1>
+          <p>Login with your admin credentials to go to Dashboard.</p>
+        </div>
+        <div class="content-body">
+          <form id="af-login-form" class="af-form">
+            <h2 class="clr-dark-acc">Login Here</h2>
+            <div class="form-group">
+              <label for="af-form-email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="af-form-email" placeholder="Enter Email" required />
+            </div>
+            <div class="form-group">
+              <label for="af-form-pass" class="form-label">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="af-form-pass" placeholder="Enter Password" required />
+                <button type="button" class="btn btnPrim js-pass-tog">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="af-form-remember" />
+              <label for="af-form-remember" class="form-check-label clr-grey-acc-hov">Remember me</label>
+            </div>
+            <div class="form-submit-group text-center">
+              <button type="submit" class="btn btnWide btnSec">Login</button>
+            </div>
+            <p class="form-line">
+              <span>Forgot Password?</span>
+              <a href="javascript:void(0)" class="clr-sec-hov js-tog-af-form">Reset now</a>
+            </p>
+          </form>
+
+          <form id="af-reset-form" class="af-form af-form-hidden">
+            <h2 class="clr-dark-acc">Reset Password</h2>
+            <div class="form-group">
+              <label for="af-form-email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="af-form-email" placeholder="Enter Email" required />
+            </div>
+            <div class="form-group">
+              <label for="af-form-pass" class="form-label">OTP</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="af-form-pass" placeholder="Enter Password" disabled />
+                <button type="button" class="btn btnPrim js-pass-tog" disabled>
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="form-submit-group text-center">
+              <button type="submit" class="btn btnWide btnSec">Get OTP</button>
+            </div>
+            <p class="form-line">
+              <span>Remember Password?</span>
+              <a href="javascript:void(0)" class="clr-sec-hov js-tog-af-form">Login now</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/summernote.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
